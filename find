@@ -1,3 +1,0 @@
-git add path/to/photo.jpg
-git commit -m "Added missing photo"
-git push
