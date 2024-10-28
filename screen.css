@@ -1,0 +1,178 @@
+/* 在现有样式的基础上添加以下内容 */
+
+/* 教育和经验部分的样式 */
+.education, .experience {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* 项目卡片样式 */
+.project-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* 技术栈表格样式 */
+.tech-stack {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.tech-stack th {
+    background-color: #f0f0f0;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* 类型选择器 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* ID 选择器 */
+#page-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-top: 30px;
+}
+
+/* 类选择器 */
+.nav-link {
+    color: #333;
+    text-decoration: none;
+}
+
+/* 其他样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;  /* 使列表整体居中 */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;  /* 调整左右间距 */
+}
+
+/* 导航栏样式更新 */
+nav {
+    text-align: center;
+    margin: 20px 0;
+    display: inline-block;  /* 让导航栏宽度适应内容 */
+    position: relative;     /* 用于居中定位 */
+    left: 50%;             /* 配合transform使用实现居中 */
+    transform: translateX(-50%);
+    background-color: #333;
+    border-radius: 21px;
+    padding: 8px 20px;     /* 减小上下内边距，保持左右内边距 */
+    border: 2px solid #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;            /* 移除默认外边距 */
+    display: flex;        /* 使用flex布局 */
+    gap: 30px;           /* 使用gap控制项目间距 */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;      /* 只保留上下内边距 */
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* 响应式设计更新 */
+@media screen and (max-width: 768px) {
+    nav {
+        border-radius: 15px;
+        padding: 8px 15px;  /* 移动端稍微减小内边距 */
+    }
+    
+    nav ul {
+        flex-direction: column;  /* 移动端改为垂直排列 */
+        gap: 15px;              /* 减小间距 */
+    }
+}
+
+/* 首页背景样式 */
+.home-background {
+    background-image: url('/Users/penghaozhu/Pictures/Photos Library.photoslibrary/resources/derivatives/3/3BDA1A9F-9770-4C91-A005-CBBAD6686640_1_105_c.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    padding: 20px;
+}
+
+/* 为了确保内容可读性，添加半透明覆盖层 */
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);  /* 白色半透明背景 */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 调整导航栏样式以配合背景 */
+nav {
+    background-color: rgba(51, 51, 51, 0.9);  /* 稍微透明的导航栏 */
+}
+
+/* 如果背景图片较深，可以添加这些样式使文字更清晰 */
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.95);  /* 更不透明的背景 */
+    color: #333;  /* 确保文字颜色足够深 */
+}
+
+#page-footer {
+    background-color: rgba(240, 240, 240, 0.9);  /* 半透明的页脚背景 */
+}
